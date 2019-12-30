@@ -16,6 +16,13 @@ function fix_dpi() {
 }
 fix_dpi();
 
+window.addEventListener('resize',
+function(e){
+    c.clearRect(0, 0, canvas.width, canvas.height);
+    onStart();
+});
+
+// alert("This project is best visualised in full screen.")
 let numberArray = [];
 let num;
 let passes;
@@ -183,15 +190,19 @@ let unit = { // Defines one square box
         passes++;
         i++;
     }
-
-if(activeTab == null){
-    c.fillStyle = "black";
-    c.font = "50px Georgia";
-    c.fillText("Click one of the buttons below to simulate a sorting algorithm!", canvas.width/2 - 19.5*unit.x, canvas.height/2);
-    pass.style.display = "none";
-    compare.style.display = "none";
-    swap.style.display = "none";
+function onStart(){
+    if(activeTab == null){
+        c.fillStyle = "black";
+        c.font = "4vh Georgia";
+        c.textAlign = "center";
+        c.fillText("Click one of the buttons below to start simulating a sorting algorithm!", canvas.width/2, canvas.height/2);
+        pass.style.display = "none";
+        compare.style.display = "none";
+        swap.style.display = "none";
+    }
 }
+
+onStart();
 
 function draw(){
     pass.style.display = "flex";
@@ -209,10 +220,10 @@ function draw(){
         c.strokeStyle = 'black';
         c.strokeRect(i*unit.x, (50-num)*unit.y, unit.x, num*unit.y);
         c.fillStyle = "black";
-        c.font = "20px Georgia";
+        c.font = "2.5vh Georgia";
         if(num<=9)
-            c.fillText(num, i*unit.x+10, (50-num-1)*unit.y);
+            c.fillText(num, i*unit.x+15, (50-num-1)*unit.y);
         else
-            c.fillText(num, i*unit.x+3, (50-num-1)*unit.y);
+            c.fillText(num, i*unit.x+15, (50-num-1)*unit.y);
     }
 }

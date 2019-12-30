@@ -1,21 +1,25 @@
 body{
-    margin: 0;
+    max-height: 100vh;
     max-width: 100vw;
-    min-height: 98vh;
     background: linear-gradient(rgb(195, 189, 248), rgb(70, 11, 165));
+
 }
-/* background: linear-gradient(rgb(134, 124, 248), rgb(59, 48, 77)); */
+.container-fluid{
+    height: 96vh;
+    width: 96vw;
+    margin: 2vh 2vw;
+}
 .top{
+    height: 6vh;
+    margin: 0vh 12vw 1.5vh 12vw;
     display: flex;
     justify-content: center;
-    margin-top: 2vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    align-items: center;
     font-size: x-large;
 }
 .passes{
-    width: 20%;
-    height: 5vh;
+    width: 25%;
+    height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +28,7 @@ body{
 }
 .comparisons{
     width: 30%;
-    height: 5vh;
+    height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +38,7 @@ body{
 }
 .swaps{
     width: 30%;
-    height: 5vh;
+    height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,25 +48,23 @@ body{
 }
 canvas{
     display: block;
-    margin-top: 2vh;
-    margin-left: auto;
-    margin-right: auto;
-    height: 700px;
-    width: 1400px;
-    background-color: #f7eae0;
+    width: 84vw;
+    height: 78vh;
     border: 1px solid black;
+    margin: 0 6vw 1.5vh 6vw;            
+    background-color: #f7eae0;
     border-radius: 5px;
 }
-/* #f7eae0 */
-.clicks{
+.bottom{
+    height: 9vh;
+    margin: 0 12vw 2vh 12vw;
     display: flex;
     justify-content: center;
-    margin-top: 2vh;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    align-items: center;
 }
 .btn{
-    margin: auto 1vw;
+    margin: 1vh 2vw;
+    height: 6vh;
     color: rgb(139, 0, 0);
     background-color: #f9dec9;
     font-size: x-large;
