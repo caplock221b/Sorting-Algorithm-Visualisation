@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    max-width: 100vw;
+    min-height: 98vh;
+    background: linear-gradient(rgb(195, 189, 248), rgb(70, 11, 165));
+}
+/* background: linear-gradient(rgb(134, 124, 248), rgb(59, 48, 77)); */
+.top{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: x-large;
+}
+.passes{
+    width: 20%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9dec9;
+    border-radius: 5px;
+}
+.comparisons{
+    width: 30%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+    background-color: #f9dec9;
+    border-radius: 5px;
+}
+.swaps{
+    width: 30%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+    background-color: #f9dec9;
+    border-radius: 5px;
+}
+canvas{
+    display: block;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px;
+    width: 1400px;
+    background-color: #f7eae0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+/* #f7eae0 */
+.clicks{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+.btn{
+    margin: auto 1vw;
+    color: rgb(139, 0, 0);
+    background-color: #f9dec9;
+    font-size: x-large;
+}
+.btn:hover{
+    color: black;
+    background-color: rgb(5, 253, 5);
+    font-style: oblique;
+}
+.bubble{
+    margin-top: 5px;
+}
